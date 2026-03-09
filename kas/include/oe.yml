@@ -1,0 +1,19 @@
+header:
+  version: 14
+
+repos:
+  openembedded-core:
+    url: https://git.openembedded.org/openembedded-core
+    path: layers/openembedded-core
+    branch: scarthgap
+    commit: a9a785d7fa0cfe2a9087dbcde0ef9f0d2a441375 
+    layers:
+      meta:
+
+  bitbake:
+    url: https://git.openembedded.org/bitbake
+    path: layers/bitbake
+    branch: "2.8"
+    commit: 10118785e4a670bce4980e1044c0888a8b6e84af
+    layers:
+      bitbake: disabled
