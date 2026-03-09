@@ -1,0 +1,4 @@
+build/
+layers/
+yocto-venv/
+.kas_shell_history
