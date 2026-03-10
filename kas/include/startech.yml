@@ -1,0 +1,12 @@
+header:
+  version: 14
+
+repos:
+  meta-startech:
+    path: meta-startech
+  
+  meta-startech-bsp:
+    path: meta-startech-bsp
+
+  meta-startech-distro:
+    path: meta-startech-distro

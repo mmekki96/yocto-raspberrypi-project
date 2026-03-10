@@ -4,6 +4,7 @@ header:
     - include/local.yml
     - include/oe.yml
     - include/rpi4.yml
+    - include/startech.yml
 
 machine: raspberrypi4-64
 distro: nodistro
