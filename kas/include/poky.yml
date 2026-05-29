@@ -1,0 +1,11 @@
+header:
+  version: 14
+
+repos:
+  meta-poky:
+    url: https://git.yoctoproject.org/meta-yocto
+    path: layers/meta-poky
+    branch: scarthgap
+    commit: 0845965f1d81d22d47dcf28c525c7463fafe5245
+    layers:
+      meta-poky:

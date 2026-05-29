@@ -3,10 +3,11 @@ header:
 
 local_conf_header:
   standard: |
-    USER_CLASSES = "buildstats"
-    PATCHRESOLVE = "noop"
-  debug-tweaks: |
-    IMAGE_FEATURES += "empty-root-password allow-empty-password allow-root-login post-install-logging"
+    CONF_VERSION = "2"
+    LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+    IMAGE_INSTALL:append = " dropbear openssh-sftp-server connman"
+    EXTRA_IMAGE_FEATURES:append = " ssh-server-dropbear debug-tweaks"
+  
   diskmon: |
     BB_DISKMON_DIRS = "\
         STOPTASKS,${TMPDIR},1G,100K \

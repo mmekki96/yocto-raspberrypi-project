@@ -5,7 +5,9 @@ header:
     - kas/include/oe.yml
     - kas/include/rpi4.yml
     - kas/include/startech.yml
+    - kas/include/poky.yml
 
-machine: raspberrypi4-64
 distro: startech
-target: core-image-minimal
+target:
+  - core-image-minimal
+  - core-image-base
