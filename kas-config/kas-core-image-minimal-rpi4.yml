@@ -1,0 +1,11 @@
+header:
+  version: 14
+  includes:
+    - kas-config/include/local.yml
+    - kas-config/include/oe.yml
+    - kas-config/include/rpi4.yml
+    - kas-config/include/startech.yml
+    - kas-config/include/poky.yml
+
+distro: startech
+target: core-image-minimal
