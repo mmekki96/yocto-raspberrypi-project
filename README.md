@@ -145,7 +145,7 @@ core-image-minimal-raspberrypi4-64.rootfs.wic.bz2
 
 > ⚠️ **Warning**
 >
-> Verify the target storage device carefully before running `dd`. Writing to the wrong block device may permanently destroy data on your host machine.
+> Verify the target storage device carefully before running `dd`. Writing to the wrong block device may permanently destroy data from the host machine.
 
 List currently connected storage devices:
 
@@ -159,12 +159,12 @@ Insert the SD card and run again:
 ls /dev/sd*
 ```
 
-Identify the newly detected device (for example `/dev/sdb`).
+Identify the newly detected device (for example `/dev/sdc`).
 
 Flash the image:
 
 ```bash
-bzcat build/tmp/deploy/images/raspberrypi4-64/core-image-minimal-raspberrypi4-64.rootfs.wic.bz2 | sudo dd of=/dev/sdX bs=4M status=progress conv=fsync
+bzcat build/tmp/deploy/images/raspberrypi4-64/core-image-minimal-raspberrypi4-64.rootfs.wic.bz2 | sudo dd of=/dev/sdX
 ```
 
 Replace `/dev/sdX` with the correct SD card device.
@@ -199,19 +199,19 @@ ssh root@<RASPBERRY_PI_IP>
 * [x] ConnMan networking
 * [x] Dropbear SSH access
 
-### Phase 2 – Sensor Integration 🚧
+### Phase 2 – Sensor Integration
 
 * [ ] Custom application layer
 * [ ] DHT11/DHT22 integration
 * [ ] Systemd service deployment
 
-### Phase 3 – OTA Updates 🚧
+### Phase 3 – OTA Updates
 
 * [ ] RAUC integration
 * [ ] Secure A/B updates
 * [ ] Remote deployment workflow
 
-### Phase 4 – Platform Security 🚧
+### Phase 4 – Platform Security
 
 * [ ] Secure Boot
 * [ ] Chain of Trust
