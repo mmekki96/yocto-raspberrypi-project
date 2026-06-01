@@ -5,11 +5,13 @@
 ![RaspberryPi](https://img.shields.io/badge/Target-Raspberry%20Pi%204-red)
 ![Status](https://img.shields.io/badge/Status-Phase%201%20Completed-brightgreen)
 
-A custom Embedded Linux distribution built with **Yocto Project**, **KAS**, and **Docker**, targeting the **Raspberry Pi 4 Model B**.
+When deploying embedded applications on a Raspberry Pi 4, general-purpose operating systems such as Raspberry Pi OS (Raspbian) often include many services and packages that are unnecessary for dedicated embedded products.
 
-The goal of this project is to provide a lightweight, reproducible, and maintainable Linux platform for embedded applications while avoiding the overhead of a general-purpose operating system.
+This project addresses that challenge by building **Startech** — a custom, minimalist, and headless Linux distribution tailored specifically for the **Raspberry Pi 4 Model B**.
 
-The project introduces a custom distribution named **Startech**, built around a minimal image configuration and automated through a containerized build workflow. Using **KAS** and **Docker**, the entire build environment is isolated from the host machine, ensuring reproducible builds and simplified workspace management.
+To simplify the development workflow, the repository provides a fully automated and containerized build environment based on **Yocto Project**, **KAS**, and **Docker**. Instead of manually cloning layers, installing build dependencies, and configuring the workspace, a single wrapper script automates the entire process—from fetching Yocto layers to generating a deployable Linux image.
+
+The resulting infrastructure provides a lightweight, reproducible, and isolated build system capable of producing a customized Embedded Linux image ready to run on real Raspberry Pi 4 hardware.
 
 ## Features
 
